@@ -1,7 +1,7 @@
 pipeline{
 	withCredentials([usernamePassword(credentialsId: '', passwordVariable: '', usernameVariable: 'root')]) {
     // some block
-		agent {¨
+		agent {
         	docker {
             	image 'maven:3.6.3'
         	}
