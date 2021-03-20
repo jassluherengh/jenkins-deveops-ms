@@ -4,7 +4,7 @@ pipeline{
         //     image 'maven:3.6.3'
         // }
      	// }
-	//agent any
+	agent any
 	stages{
 		stage('Build'){
 			steps{
