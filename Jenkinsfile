@@ -9,7 +9,7 @@ pipeline{
 		stage('Build'){
 			steps{
 					//sh 'ls'
-					sh "chmod +x -R ${env.WORKSPACE}"
+					// sh "chmod +x -R ${env.WORKSPACE}"
         			//sh './jenkins/test.sh
 					echo "Path -$PATH "
 				
