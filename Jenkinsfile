@@ -1,16 +1,17 @@
 pipeline{
-	agent {
-         docker {
-             image 'maven:3.6.3'
-         }
-     }
-	//agent any
+	//agent {
+         //docker {
+           //  image 'maven:3.6.3'
+        // }
+     //}
+	agent any
 	stages{
 		stage('Build'){
 			steps{
 					//sh 'ls'
 				//	sh "chmod +x -R ${env.WORKSPACE}"
         			//sh './jenkins/test.sh
+					sh 'ls'
 					echo "Build"
 					echo "Path -$PATH "
 				
