@@ -1,11 +1,11 @@
 pipeline{
-	agent {
-         docker {
-             image "maven:3.6.3-jdk-13"
-			// label "myDocker"
-         }
-	}
-	//agent any
+	//agent {
+    //     docker {
+    //         image "maven:3.6.3-jdk-13"
+	//			// label "myDocker"
+    //     }
+	//}
+	agent any
 
 	//tools{
 	//	maven "myMaven"
