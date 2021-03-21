@@ -17,7 +17,8 @@ pipeline{
 				//	sh "chmod +x -R ${env.WORKSPACE}"
         			//sh './jenkins/test.sh
 					sh 'ls'
-					echo "Build"
+					sh "mvn -version"
+					//echo "Build"
 					echo "Path -$PATH "
 			}			
 		}
